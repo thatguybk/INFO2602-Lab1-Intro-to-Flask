@@ -56,7 +56,7 @@ def get_stats():
       return jsonify(chicken, fish, vege)
 
         
-
+# /stats gives the wrong statistics, ask for assistance
     
 
 
