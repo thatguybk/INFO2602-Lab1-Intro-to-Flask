@@ -53,10 +53,19 @@ def get_stats():
       fish += 1
     else:
       vege += 1
-      return jsonify(chicken, fish, vege)
+  return jsonify(chicken, fish, vege)
 
-        
-# /stats gives the wrong statistics, ask for assistance
+@app.route('/add/<int:a>/<int:b>')
+def add(a,b):
+  return jsonify(a+b)
+
+@app.route('/subtract/<int:a>/<int:b>')
+def subtract(a,b):
+  return jsonify(a-b)
+
+app.route('/divide/<float:a>/<float:b>')
+def divide(a,b):
+  return jsonify(a/b)
     
 
 
